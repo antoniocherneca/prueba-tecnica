@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Antonio José Cherneca">
+  <meta name="keywords" content="video, diseño, responsive">
+  <meta name="description" content="Web application development">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="images/faviconVideo.ico" rel="icon" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="R3.css">
+  <title>Video Web</title>
+  <script src="R3.js"></script>
+</head>
+<body>
+  <header class="bg-success py-2 mb-4">
+    <div class="container-fluid">
+      <h1 class="fw-normal text-light">Reproductor de video</h1>
+    </div>
+  </header>
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 tarjeta-miniatura d-flex justify-content-center align-items-center mb-4">
+          <a data-bs-toggle="modal" data-bs-target="#modalVideo">
+            <img src="https://supernaturalpartners.org/img/svg/play_white.svg" alt="Icono de play" class="play" onclick="recargarVideo()">
+          </a>
+        </div>
+        <div class="col-md-7 tarjeta-texto d-flex flex-column justify-content-center">
+          <div>
+            <h3 class="fw-bold lh-sm titulo-video">
+              Give the world the answer they need, become a Supernatural Partner today.
+            </h3>
+            <p>
+              Thousands of people need you to bring revival to communities, nations, and governments around the world through God’s supernatural power. Today, you have the opportunity to partner with us and take the message of Jesus to people who have never had an encounter with God. Give the world the answer they need, become a Supernatural Partner today by sending God
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal del video -->
+  <div class="modal fade" id="modalVideo" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="cerrarVideo()"></button>
+        </div>
+        <div class="modal-body">
+          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/KzEFQW9CXGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <div class="ratio ratio-16x9">
+            <iframe class="video" src="video/Concierto de Aranjuez.mp4" title="YouTube video player" allow="autoplay" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

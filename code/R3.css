@@ -1,0 +1,36 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.titulo-video {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.tarjeta-miniatura {
+  background-image: url('images/miniatura.jpg');
+  background-attachment: local;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+
+.miniatura {
+  width: 100%;
+}
+
+.play {
+  height: 90px;
+}
+
+.play:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .tarjeta-texto {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+}
